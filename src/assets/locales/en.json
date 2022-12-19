@@ -1,1 +1,35 @@
-{}
+{
+    "header": {
+        "search-placeholder": "Search movies...",
+        "watchlist": "Watchlist",
+        "favorites": "Favorites",
+        "spanish": "Spanish",
+        "english": "English"
+    },
+    "search": {
+        "see-all": "See all results for \"{{query}}\"",
+        "no-options": "No movies found"
+    },
+    "trending": {
+        "title": "Trending Movies",
+        "loading": "Loading..."
+    },
+    "list": {
+        "release-date": "Release Date",
+        "title": "Title",
+        "rating": "Rating",
+        "add-lists": "Add to lists",
+        "search-title": "Results for \"{{query}}\"",
+        "watchlist-title": "Your WatchList",
+        "favorites-title": "Your Favorite Movies",
+        "vote-count": "{{count}} votes",
+        "page-title": "My {{type}} | MovieNation"
+    },
+    "detail": {
+        "show-images": "See all the images",
+        "cast": "Casting:",
+        "genres": "Genres:",
+        "produced": "Produced by:",
+        "countries": "Countries:"
+    }
+}
