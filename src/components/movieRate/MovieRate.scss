@@ -1,0 +1,14 @@
+@import "../../assets/style/global.scss";
+
+.movie-rate {
+    color: $color-primary;
+}
+
+.movie-rate--secondary {
+    opacity: 0.7;
+    font-size: 12px;
+
+    @media (min-width: $sm) {
+        font-size: 14px;
+    }
+}

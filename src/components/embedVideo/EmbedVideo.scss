@@ -1,0 +1,23 @@
+@import "../../assets/style/global.scss";
+
+.video-responsive {
+
+    @media (max-width: $md) {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    iframe {
+        margin-top: 20px;
+
+        @media (max-width: $md) {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+}

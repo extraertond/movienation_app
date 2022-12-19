@@ -1,0 +1,14 @@
+@import "../../assets/style/global.scss";
+
+.image-list {
+    max-width: auto;
+
+    @media (min-width: $sm) {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    @media (min-width: $md) {
+        grid-template-columns: repeat(6, 1fr) !important;
+    }
+
+}

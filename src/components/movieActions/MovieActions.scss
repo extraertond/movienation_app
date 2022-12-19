@@ -1,0 +1,23 @@
+@import "../../assets/style/global.scss";
+
+.movie-action {
+    cursor: pointer;
+
+    &__icon {
+        font-size: 20px !important;
+        opacity: 0.5;
+
+        @media (min-width: $sm) {
+            font-size: 40px !important;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--selected {
+            color: $color-primary;
+        }
+    }
+
+}
