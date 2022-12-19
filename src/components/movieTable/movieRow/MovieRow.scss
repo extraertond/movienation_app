@@ -1,0 +1,73 @@
+@import "../../../assets/style/global.scss";
+
+.country-flag {
+    margin-top: 10px;
+
+    img {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.title {
+    cursor: pointer;
+}
+
+.img__container {
+    cursor: pointer;
+
+    @media (max-width: $sm) {
+        width: 85px !important;
+    }
+}
+
+.poster__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $sm) {
+        min-height: 225px;
+    }
+
+    img {
+        width: 70px;
+
+        @media (min-width: $sm) {
+            width: 150px;
+        }
+    }
+}
+
+.show-block-mobile {
+    @media (min-width: $sm) {
+        display: none !important;
+    }
+}
+
+.block-mobile {
+    display: none !important;
+
+    @media (min-width: $sm) {
+        display: table-cell !important;
+    }
+}
+
+.movie-count {
+    opacity: 0.7;
+    font-size: 12px;
+
+    @media (min-width: $sm) {
+        font-size: 14px;
+
+    }
+}
+
+.table-cell--mobile {
+    display: none !important;
+
+    @media (min-width: $sm) {
+        display: table-cell !important;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../assets/style/global.scss";
+
+.table-head--desktop {
+    display: none !important;
+
+    @media (min-width: $sm) {
+        display: table-row !important;
+    }
+}
+
+.table-head--mobile {
+    display: table-row !important;
+
+    @media (min-width: $sm) {
+        display: none !important;
+    }
+}
