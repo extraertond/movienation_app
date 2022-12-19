@@ -68,5 +68,9 @@
         .info__container {
             text-align: start;
         }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
     }
 }

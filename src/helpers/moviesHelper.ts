@@ -34,6 +34,7 @@ export const normalizeMovieDetail = (movie: any) => {
     rate: Math.round(movie.vote_average * 10) / 10,
     vote_count: movie.vote_count,
     videos: videos.map((video: any) => video.key),
+    overview: movie.overview,
     countries,
     vipCast,
     images,

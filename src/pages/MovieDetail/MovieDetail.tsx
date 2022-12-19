@@ -45,6 +45,8 @@ export const MovieDetail = () => {
             <div className="movie-detail__extra-info__container">
               <div className="info__container">
                 <MovieActions id={movie.id} />
+                <p className="info-title">{t("detail.overview")}</p>
+                <div>{movie.overview}</div>
                 <p className="info-title">{t("detail.genres")}</p>
                 <div>{movie.genres}</div>
                 <p className="info-title">{t("detail.countries")}</p>
