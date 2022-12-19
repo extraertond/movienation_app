@@ -1,0 +1,23 @@
+@import "../../assets/style/global.scss";
+
+.movie-grid {
+
+    text-align: center;
+
+    &__title {
+        font-weight: 500;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 30px;
+
+        @media (min-width: $sm) {
+            font-size: 40px;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
