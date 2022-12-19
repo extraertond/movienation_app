@@ -1,0 +1,9 @@
+@import "../assets/style/global.scss";
+
+.main-layout__container {
+  padding: 76px 20px 0 20px;
+
+  @media (min-width: $xs) {
+    padding-top: 84px;
+  }
+}
