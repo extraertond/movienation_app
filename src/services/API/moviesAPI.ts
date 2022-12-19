@@ -2,7 +2,7 @@ import { createApi } from "@reduxjs/toolkit/query/react";
 import i18next from "i18next";
 import axiosBaseQuery from "./axiosBaseQuery";
 import { API_KEY, API_VERSION, BASE_API_URL, MOVIE_ENDPOINTS } from "../../constants/endpoints";
-import { normalizeMovieDetail, normalizeMovieList } from "../../helpers/moviesHelper";
+import { normalizeMovieDetail, normalizeMovieList } from "../../helpers/movieHelper";
 
 type GetMoviesSearchQueryArgs = {
   query: string;
@@ -42,7 +42,7 @@ export const moviesApi = createApi({
     getMovieDetails: build.query<any, GetDetailQueryArgs>({
       query: ({ id }) => ({
         url: `${API_VERSION}${MOVIE_ENDPOINTS.detail}/${id}`,
-        params: { api_key: API_KEY, language: i18next.language, append_to_response: "credits,similar,videos,images" },
+        params: { api_key: API_KEY, language: i18next.language, append_to_response: "credits,videos,images" },
       }),
       transformResponse: (response) => normalizeMovieDetail(response),
     }),

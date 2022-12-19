@@ -11,7 +11,7 @@ import "./MovieDetail.scss";
 export const MovieDetail = () => {
   const { t } = useTranslation();
   const { id } = useParams();
-  const [trigger, { data: movie, isLoading, isSuccess }] = useLazyGetMovieDetailsQuery();
+  const [trigger, { data: movie, isSuccess }] = useLazyGetMovieDetailsQuery();
 
   // Close search bar if it is open
   useEffect(() => (document.activeElement as HTMLElement)?.blur(), []);
