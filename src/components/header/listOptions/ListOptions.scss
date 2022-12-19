@@ -1,0 +1,38 @@
+@import "../../../assets/style/global.scss";
+
+
+.list-options__container {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+}
+
+.list-icon {
+    color: $color-primary;
+
+    @media (min-width: $sm) {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    @media (min-width: $sm) {
+        font-size: 35px !important;
+    }
+
+
+}
+
+.list-title {
+    color: inherit;
+
+    @media (min-width: 0px) {
+        display: none;
+    }
+
+    @media (min-width: $sm) {
+        display: block;
+    }
+}

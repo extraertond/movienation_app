@@ -1,0 +1,10 @@
+@import "../../../../assets/style/global.scss";
+
+.text-input {
+    background-color: $page-bg;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #4d4d4d;
+    }
+}

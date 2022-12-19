@@ -1,0 +1,30 @@
+@import "../../../assets/style/global.scss";
+
+
+.search-bar__form {
+    width: 100%;
+    padding: 0 10px;
+
+    @media (min-width: $xs) {
+        width: auto;
+    }
+}
+
+.paper {
+    .see-all__option {
+        cursor: pointer;
+        padding: 8px 12px;
+    }
+}
+
+.autocomplete__container {
+    width: 100%;
+
+    @media (min-width: $xs) {
+        width: 350px;
+    }
+
+    @media (min-width: $lg) {
+        width: 500px;
+    }
+}

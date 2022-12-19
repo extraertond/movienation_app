@@ -1,0 +1,23 @@
+@import "../../assets/style/global.scss";
+
+.empty-box {
+  flex-grow: 1;
+
+  @media (max-width: $xs) {
+    display: none;
+  }
+}
+
+.app-logo {
+  font-size: 40px !important;
+  cursor: pointer;
+
+  @media (min-width: $xs) {
+    font-size: 60px !important;
+  }
+}
+
+.app-logo__container {
+  display: flex;
+  padding: 0;
+}
