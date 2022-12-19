@@ -1,0 +1,69 @@
+@import "./assets/style/global.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-bg;
+  overflow-y: scroll;
+}
+
+// Set global styles to overrides MUI
+
+.MuiOutlinedInput-root {
+
+  &:hover,
+  &.Mui-focused fieldset {
+    border-color: $color-primary !important;
+  }
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #121212 !important;
+}
+
+.MuiPaper-root {
+  background-color: $color-bg !important;
+}
+
+div {
+  color: white !important;
+}
+
+.MuiTableHead-root {
+  color: black;
+}
+
+.MuiTableCell-head {
+  font-weight: 600 !important;
+  background-color: $color-primary !important;
+}
+
+.MuiTableCell-root {
+  font-size: 12px !important;
+  color: inherit !important;
+
+  @media (max-width: $sm) {
+    padding: 10px 0 !important;
+  }
+
+  @media (min-width: $sm) {
+    font-size: 18px !important;
+  }
+}
+
+.MuiTableRow-root {
+  background-color: $page-bg !important;
+}
+
+.MuiTableRow-root:nth-of-type(odd) {
+  background-color: $header-bg !important;
+}
+
+.MuiButton-root {
+  font-weight: 600 !important;
+  color: $header-bg !important;
+  background-color: $color-primary !important;
+}
