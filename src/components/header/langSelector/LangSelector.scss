@@ -1,0 +1,30 @@
+@import "../../../assets/style/global.scss";
+
+.flags__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+
+    @media(min-width: $sm) {
+        margin-left: 20px;
+        flex-direction: row;
+    }
+
+    .flag {
+        width: 20px;
+        height: auto;
+        cursor: pointer;
+
+        @media(max-width: $sm) {
+            &:last-child {
+                margin-top: 6px;
+            }
+        }
+
+        @media(min-width: $sm) {
+            margin-right: 3px;
+            width: 35px;
+        }
+    }
+}
