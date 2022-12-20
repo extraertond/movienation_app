@@ -32,6 +32,8 @@ Start the server
 ## Demo (click to open the video)
 [![Alt text](https://i.ibb.co/HVJjwCt/image.png)](https://www.youtube.com/watch?v=Ag5hhuN2zZA)
 
+Also you can visit the app live: https://polite-ganache-f51206.netlify.app/
+
 ## Tech Stack
 
 **Framework:** React v18 and TypeScript, for structuring components: 
